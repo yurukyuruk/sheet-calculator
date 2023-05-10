@@ -1,3 +1,21 @@
-body {
+html {
     border: 10px solid blue;
+}
+header {
+    display: flex;
+}
+.room-input-sections {
+    display: flex;
+}
+label {
+    display: flex;
+    flex-direction: column;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+.sheet-name-and-number {
+    display: flex;
+    justify-content: space-between;
 }
