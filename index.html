@@ -2,28 +2,30 @@
     <html lang="en">
         <head>
             <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link rel="stylesheet" href="style.css">
         </head>
         <body>
             <header>
             </header>
             <main>
-                <form class="room-input-sections">
-                    <label class="room-input-section">
-                        KING
-                        <input type="number" placeholder="Number of rooms">
-                    </label>
-                    <label class="room-input-section">
-                        DOUBLE
-                        <input type="number" placeholder="Number of rooms"> 
-                    </label>
-                    <label class="room-input-section">
-                        SUITE
-                        <input type="number" placeholder="Number of rooms"> 
-                    </label>
-                    <input type="submit">
-                </form>
-        
+                <form>
+                    <section class="room-input-sections">
+                        <label class="room-input-section">
+                            KING
+                            <input type="number" placeholder="Number of rooms">
+                        </label>
+                        <label class="room-input-section double-room-input-section">
+                            DOUBLE
+                            <input type="number" placeholder="Number of rooms"> 
+                        </label>
+                        <label class="room-input-section">
+                            SUITE
+                            <input type="number" placeholder="Number of rooms"> 
+                        </label>
+                    </section>
+                    <input type="submit"  value="COUNT" class="count-button">
+                </form>       
                 <ul class="sheet-name-and-numbers">
                     <li class="sheet-name-and-number">
                         <p>

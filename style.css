@@ -1,21 +1,66 @@
-html {
-    border: 10px solid blue;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
-header {
+ul {
+    list-style: none;
+}
+main {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(49vw + 20px);
+    background-color: rgb(235, 235, 255);
+    padding: 10px;
 }
 .room-input-sections {
     display: flex;
+    justify-content: center;
+}
+.double-room-input-section {
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+.count-button {
+    width: 15vw;
+    height: 60px;
+    margin-top: 20px;
+    background-color: rgb(209, 209, 253);
+    border: none;
+    box-shadow: 1px 1px 2px;
+}
+.count-button:hover {
+    cursor: pointer;
+    background-color: rgb(197, 197, 255);
 }
 label {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
-ul {
-    list-style: none;
-    padding-left: 0;
+input {
+    width: 15vw;
+    height: 40px;
+}
+input::placeholder {
+    text-align: center;
+}
+.sheet-name-and-numbers {
+    margin-top: 45px;
+    width: calc(49vw + 20px);
 }
 .sheet-name-and-number {
     display: flex;
     justify-content: space-between;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(200, 200, 200);
 }
