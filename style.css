@@ -16,14 +16,17 @@ main {
 form {
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: calc(49vw + 20px);
     background-color: rgb(235, 235, 255);
     padding: 10px;
 }
 .room-input-sections {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+}
+.room-input-section {
+    flex: 1;
+    width: 100%;
 }
 .double-room-input-section {
     padding-left: 2vw;
@@ -35,7 +38,9 @@ form {
     margin-top: 20px;
     background-color: rgb(209, 209, 253);
     border: none;
-    box-shadow: 1px 1px 2px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    font-size: 16px;
+    transition: background-color 0.4s ease-in-out;
 }
 .count-button:hover {
     cursor: pointer;
@@ -44,18 +49,25 @@ form {
 label {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 input {
     width: 15vw;
     height: 40px;
+    padding-left: 16px;
+    font-size: 16px;
 }
 input::placeholder {
-    text-align: center;
+    font-size: 14px;
 }
-.sheet-name-and-numbers {
+.sheet-name-and-numbers-section {
     margin-top: 45px;
     width: calc(49vw + 20px);
+}
+.sheet-name-and-numbers-header {
+    font-size: 18px;
+}
+.sheet-name-and-numbers {
+    margin-top: 10px;
 }
 .sheet-name-and-number {
     display: flex;
@@ -63,4 +75,18 @@ input::placeholder {
     padding-top: 5px;
     padding-bottom: 5px;
     border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+@media (max-width: 930px) {
+    form {
+        width: 100vw;
+    }
+    input {
+        width: 100%;
+        padding-left: 8px;
+        text-overflow: ellipsis;
+    }
+    .sheet-name-and-numbers-section {
+        width: calc(100vw - 20px);
+    }
 }
