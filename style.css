@@ -1,3 +1,5 @@
+@import 'colors.css';
+
 * {
     padding: 0;
     margin: 0;
@@ -7,48 +9,99 @@
 ul {
     list-style: none;
 }
-main {
+body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
+}
+header {
+    width: calc(49vw + 20px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    padding: 10px;
+    z-index: 1;
+}
+.logo {
+    width: 75px;
+    height: 75px;
+}
+.whatsapp-share-section {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    background-color: var(--accent-color-dark);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    padding: 5px;
+    transition: background-color 0.4s ease-in-out;
+}
+.whatsapp-share-section:hover {
+    cursor: pointer;
+    background-color: rgb(197, 197, 255);
+}
+.whatsapp-share-section p {
+    color: black;
+}
+.whatsapp-share-logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
 }
 form {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr, 1fr;
     grid-gap: 10px;
     width: calc(49vw + 20px);
-    background-color: rgb(235, 235, 255);
+    background-color: var(--accent-color);
     padding: 10px;
 }
-.king-room-input-section {
+.king-dueout-room-input-section {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 0;
     grid-row-end: 1;
 }
-.double-room-input-section {
+.double-dueout-room-input-section {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 0;
     grid-row-end: 1;
 }
-.suite-room-input-section {
+.suite-dueout-room-input-section {
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 0;
     grid-row-end: 1;
 }
-.count-button {
+.king-stayover-room-input-section {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
+}
+.double-stayover-room-input-section {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.suite-stayover-room-input-section {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.count-button {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
     height: 60px;
     padding: 0;
     margin-top: 20px;
-    background-color: rgb(209, 209, 253);
+    background-color: var(--accent-color-dark);
     border: none;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     font-size: 16px;
@@ -67,6 +120,11 @@ input {
     height: 40px;
     padding-left: 16px;
     font-size: 16px;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 input::placeholder {
     font-size: 14px;
@@ -88,8 +146,23 @@ input::placeholder {
     padding-bottom: 5px;
     border-bottom: 1px solid rgb(200, 200, 200);
 }
+footer {
+    text-align: center;
+    background-color: var(--accent-color-dark);
+    padding-left: 10px;
+    padding-right: 10px;
+    width: calc(49vw + 20px);
+    display: flex;
+    justify-content: center;
+}
+.designer {
+    display: flex;
+}
 
 @media (max-width: 930px) {
+    header {
+        width: 100vw;
+    }
     form {
         width: 100vw;
     }
@@ -100,5 +173,8 @@ input::placeholder {
     }
     .sheet-name-and-numbers-section {
         width: calc(100vw - 20px);
+    }
+    footer {
+        width: 100vw;
     }
 }

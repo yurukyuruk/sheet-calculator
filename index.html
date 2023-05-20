@@ -4,23 +4,44 @@
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link rel="stylesheet" href="style.css">
+            <link rel="manifest" href="manifest.json">
+            <meta name="theme-color" content="#2d2d2d">
         </head>
         <body>
             <header>
+                <img src="images/logo.svg" class="logo">
+                <a href="" class="whatsapp-share-section">
+                    <img src="images/whatsapp-logo.svg" class="whatsapp-share-logo">
+                    <p>
+                        SHARE ON WHATSAPP
+                    </p>
+                </a>
             </header>
             <main>
                 <form>
-                        <label class="room-input-section king-room-input-section">
-                            KING:
-                            <input type="number" placeholder="Number of rooms...">
+                        <label class="room-input-section king-dueout-room-input-section">
+                            KING DUEOUT:
+                            <input type="number" inputmode="numeric" placeholder="Number of rooms..." min="0" step="1" class="king-dueout-room-input">
                         </label>
-                        <label class="room-input-section double-room-input-section">
-                            DOUBLE:
-                            <input type="number" placeholder="Number of rooms..."> 
+                        <label class="room-input-section double-dueout-room-input-section">
+                            DOUBLE DUEOUT:
+                            <input type="number" inputmode="numeric" placeholder="Number of rooms..." min="0" step="1" class="double-dueout-room-input"> 
                         </label>
-                        <label class="room-input-section suite-room-input-section">
-                            SUITE:
-                            <input type="number" placeholder="Number of rooms..."> 
+                        <label class="room-input-section suite-dueout-room-input-section">
+                            SUITE DUEOUT:
+                            <input type="number" inputmode="numeric" placeholder="Number of rooms..." min="0" step="1" class="suite-dueout-room-input"> 
+                        </label>
+                        <label class="room-input-section king-stayover-room-input-section">
+                            KING STAYOVER:
+                            <input type="number" inputmode="numeric" placeholder="Number of rooms..." min="0" step="1" class="king-stayover-room-input">
+                        </label>
+                        <label class="room-input-section double-stayover-room-input-section">
+                            DOUBLE STAYOVER:
+                            <input type="number" inputmode="numeric" placeholder="Number of rooms..." min="0" step="1" class="double-stayover-room-input"> 
+                        </label>
+                        <label class="room-input-section suite-stayover-room-input-section">
+                            SUITE STAYOVER:
+                            <input type="number" inputmode="numeric" placeholder="Number of rooms..." min="0" step="1" class="suite-stayover-room-input"> 
                         </label>
                         <input type="submit"  value="COUNT" class="count-button">
                     
@@ -34,7 +55,7 @@
                             <p>
                                 King Plain Sheet
                             </p>
-                            <p>
+                            <p class="king-plain-sheet-number">
                                 -
                             </p>
                         </li>
@@ -42,7 +63,7 @@
                             <p>
                                 King Top Sheet
                             </p>
-                            <p>
+                            <p class="king-top-sheet-number">
                                 -
                             </p>
                         </li>
@@ -50,7 +71,7 @@
                             <p>
                                 Queen Plain Sheet
                             </p>
-                            <p>
+                            <p class="queen-plain-sheet-number">
                                 -
                             </p>
                         </li>
@@ -58,7 +79,7 @@
                             <p>
                                 Queen Top Sheet
                             </p>
-                            <p>
+                            <p class="queen-top-sheet-number"> 
                                 -
                             </p>
                         </li>
@@ -66,7 +87,7 @@
                             <p>
                                 Pillowcases
                             </p>
-                            <p>
+                            <p class="pillowcases-number">
                                 -
                             </p>
                         </li>
@@ -74,7 +95,7 @@
                             <p>
                                 Body Towel
                             </p>
-                            <p>
+                            <p class="body-towel-number">
                                 -
                             </p>
                         </li>
@@ -82,7 +103,7 @@
                             <p>
                                 Hand Towel
                             </p>
-                            <p>
+                            <p class="hand-towel-number">
                                 -
                             </p>
                         </li>
@@ -90,7 +111,7 @@
                             <p>
                                 Face Cloth
                             </p>
-                            <p>
+                            <p class="face-cloth-number">
                                 -
                             </p>
                         </li>
@@ -98,12 +119,26 @@
                             <p>
                                 Bath Mat
                             </p>
-                            <p>
+                            <p class="bath-mat-number">
                                 -
                             </p>
                         </li>
                     </ul>
                 </section>                      
             </main>
+            <footer>
+                <p>
+                    COPYRIGHT © 2022
+                </p>
+                <div class="designer">
+                    <p>
+                        Designed by <strong>Asli Yuruk</strong>.&nbsp;  
+                    </p>
+                    <p>
+                        e-mail: <strong>yurukyuruk@gmail.com</strong>
+                    </p>
+                </div>
+            </footer>
+            <script src="./index.js" type="module"></script>
         </body>
     </html>

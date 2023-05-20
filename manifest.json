@@ -1,0 +1,43 @@
+{
+    "$schema": "https://json.schemastore.org/web-manifest-combined.json",
+    "start_url": ".",
+    "lang": "en",
+    "dir": "auto",
+    "name": "Pictures - List",
+    "short_name": "PicLi",
+    "description": "Simple app created for gdsc pwa workshops",
+    "display": "standalone",
+    "orientation": "natural",
+    "theme_color": "#2d2d2d",
+    "background_color": "#2d2d2d",
+    "categories": [
+      "education",
+      "pictures"
+    ],
+    "icons": [
+      {
+        "src": "images/logo-144.png",
+        "sizes": "144x144",
+        "type": "image/png",
+        "purpose": "maskable any"
+      },
+      {
+        "src": "images/logo-512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "maskable any"
+      }
+    ],
+    "screenshots": [
+      {
+        "src": "assets/screenshots/screenshot-1.png",
+        "type": "images/screenshot-1.png",
+        "sizes": "750x1524"
+      },
+      {
+        "src": "assets/screenshots/screenshot-2.png",
+        "type": "images/screenshot-2.png",
+        "sizes": "512x512"
+      }
+    ]
+  }
